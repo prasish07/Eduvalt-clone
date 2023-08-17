@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/custom-hover.css">
+    <title>Assignment</title>
+
+</head>
+
+<!-- Fix adds -->
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container custom-container">
+            <!-- Company logo -->
+            <div class="header__logo">
+                <img src="./assets/svg/company-logo.svg" alt=" company logo">
+            </div>
+            <!-- Nav-bar elements -->
+            <nav class="header__nav">
+                <ul class="header__navigation-wrapper">
+                    <!-- <li class="nav-element"><a href="#">Home <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt="arrow down"></i></a></li>
+                    <li class="nav-element"><a href="#">Courses <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt=""></i></a>
+                    </li>
+                    <li class="nav-element"><a href="#">Pages <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt=""></i></a></li>        
+                    <li class="nav-element"><a href="#">Shop <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt=""></i></a></li>
+                    <li class="nav-element"><a href="#">Blog <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt=""></i></a></li> -->
+                    <li class="custom-dropdown">
+                        <div class="custom-dropdown__title">Home <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt="arrow down"></i></div>
+                        <ul class="custom-dropdown__options">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">home 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="custom-dropdown">
+                        <div class="custom-dropdown__title">Courses <i class="icon"><img
+                                    src="./assets/svg/arrow-down.svg" alt="arrow down"></i></div>
+                        <ul class="custom-dropdown__options">
+                            <li><a href="#">All Courses</a></li>
+                            <li><a href="#">Course Details</a></li>
+                            <li><a href="#">home 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="custom-dropdown">
+                        <div class="custom-dropdown__title">Pages <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt="arrow down"></i></div>
+                        <ul class="custom-dropdown__options">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Instructors</a></li>
+                            <li><a href="#">Instructors Details</a></li>
+                            <li><a href="#">Our Mentors</a></li>
+                            <li><a href="#">Our Events</a></li>
+                            <li><a href="#">Event Details</a></li>
+                            <li><a href="#">Asked Question</a></li>
+                            <li><a href="#">404 Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="custom-dropdown">
+                        <div class="custom-dropdown__title">Shop <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt="arrow down"></i></div>
+                        <ul class="custom-dropdown__options">
+                            <li><a href="#">Shop Pages</a></li>
+                            <li><a href="#">Shop Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="custom-dropdown">
+                        <div class="custom-dropdown__title">Blog <i class="icon"><img src="./assets/svg/arrow-down.svg"
+                                    alt="arrow down"></i></div>
+                        <ul class="custom-dropdown__options">
+                            <li><a href="#">Blog Grid</a></li>
+                            <li><a href="#">Blog Standard</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Search bar -->
+            <div class="header__search">
+                <div class="header__category-search-wrapper">
+                    <!-- Dropdown category part -->
+                    <div class="category">
+                        <i class="icon"><img src="./assets/svg/window.svg" alt="window"></i>
+                        <span class="category__text">Categories</span>
+                        <i class="icon"><img src="./assets/svg/arrow-down.svg" alt="arrow down"></i>
+                    </div>
+                    <!-- search part -->
+                    <div class="search">
+                        <input type="text" placeholder="Search for products..." class="search__text">
+                        <button class="search-btn"><i class="icon"><img src="./assets/svg/search.svg" /></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- toggle menu -->
+            <div class="header__tgmenu">
+                <ul class="tgmenu-wrapper">
+                    <!-- cart wrapper -->
+                    <li class="cart">
+                        <i class="icon"><img src="./assets/svg/cart.svg" alt="cart"></i>
+                        <span class="cart__count">0</span>
+                    </li>
+                    <li><a href="#" class="btn header__login-btn">Log in</a></li>
+                    <li><a href="#" class="btn header__try-for-free-btn">Try for free</a></li>
+                    <!-- for mobile and tablet -->
+                    <li class="menu"><img src="./assets/svg/menu.svg" alt="menu"></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero part -->
+    <section class="hero-main">
+        <div class="hero container">
+            <div class="hero__element-wrapper">
+                <div class="hero__left">
+                    <h3 class=" hero__sub-title">100% Satisfaction Guarantee</h3>
+                    <h1 class="hero__title">Learn <span class="text-light-blue">Skills </span>From</h1>
+                    <h1 class="hero__title">Our Top Instructors</h1>
+                    <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                        tellus, luctus nec ullamcorper mattisBorem ipsum dolor sit amet
+                        consectetur adipiscing area we followelit.
+                    </p>
+                    <div class="hero__course-contact">
+                        <a href="" class="btn btn-special">
+                            <span class="">EXPLORE COURSES</span>
+                            <i class="icon"><img src="./assets/svg/arrow-right.svg" alt="arrow right"></i>
+                        </a>
+                        <div class="hero__contact">
+                            <i class="icon"><img src="./assets/svg/phone.svg" alt="phone"></i>
+                            <div class="hero__contact-info">
+                                <span>Have any Questions?</span>
+                                <h6>
+                                    <a href="#" class="text-dark-blue">9869768971</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__element-wrapper">
+                <div class="hero__right">
+                    <div class="hero__banner-wrapper">
+                        <img src="./assets/svg/girl.svg" alt="girl">
+                    </div>
+                    <div class="hero__facts">
+                        <div class="hero__facts-item">
+                            <i class="icon hero__facts-icon">
+                                <img src="./assets/svg/students.svg" alt="students">
+                            </i>
+                            <div class="hero__facts-info">
+                                <span>Totals Students</span>
+                                <h4>15K</h4>
+                            </div>
+                        </div>
+                        <div class="hero__facts-item">
+                            <i class="icon hero__facts-icon">
+                                <img src="./assets/svg/hat.svg" alt="students hats">
+                            </i>
+                            <div class="hero__facts-info">
+                                <span>Complete Graduation</span>
+                                <h4>34K</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Hero part end -->
+
+    <!-- brand part -->
+    <section class="brand">
+        <div class="container">
+            <div class="brand__wrapper">
+                <i class="icon slide"><img src="./assets/png/adobe.png" alt="adobe"></i>
+                <i class="icon slide"><img src="./assets/png/amazon.png" alt="amazon"></i>
+                <i class="icon slide"><img src="./assets/png/amd.png" alt="amd"></i>
+                <i class="icon slide"><img src="./assets/png/coursera.png" alt="coursera"></i>
+                <i class="icon slide"><img src="./assets/png/pencil-box.png" alt="pencil-box"></i>
+                <i class="icon slide"><img src="./assets/png/walmart.png" alt="walmart"></i>
+
+            </div>
+        </div>
+    </section>
+    <!-- hero part end -->
+
+    <!-- about us part -->
+    <section class="about-us">
+        <div class="container about-us__wrapper flex-justify-align-center">
+            <div class="about-us__left-wrapper">
+                <div class="about-us__images">
+                    <div class="about-us__small-img">
+                        <img src="./assets/png/about_img02.png" alt="small image">
+                    </div>
+                    <div class="about-us__big-img">
+                        <img src="./assets/png/about_img01.png" alt="big image">
+                    </div>
+                    <div class="about-us__exp">
+                        <i><img src="./assets/svg/floating-box.svg" alt="floating box"></i>
+                        <h4>12 +</h4>
+                        <p>Years of Experiences</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__right-wrapper">
+                <div class="about-us__content">
+                    <div class="about-us__section-title">
+                        <span class="sub-title">Get To Know About Us</span>
+                        <h2 class="title">Discover top <span>Instructors </span> Around the World</h2>
+                    </div>
+                    <p>Borem ipsum dolor sit amet, consectetur adipiscing eliawe awUt elit ellus, luctus nec ullamcorper
+                        mattisBorem ipsum dolor awes atnse awctetur adipis we followelit. Borem.</p>
+                    <ul class="about-us__info-wrapper">
+                        <li class="about-us__info-item">
+                            <i class="icon"><img src="./assets/svg/about-us-customer.svg" alt="customer"></i>
+                            <p>
+                                2000+
+                                <br>
+                                Expert Tutors
+                            </p>
+                        </li>
+                        <li class="about-us__info-item">
+                            <i class="icon"><img src="./assets/svg/about-us-dcoument.svg" alt="document"></i>
+                            <p>1500+
+                                <br>
+                                Top Lessons
+                            </p>
+                        </li>
+                        <li class="about-us__info-item">
+                            <i class="icon"><img src="./assets/svg/about-us-hat.svg" alt="hat"></i>
+                            <p>
+                                18000+
+                                <br>
+                                Over Students
+                            </p>
+                        </li>
+                        <li class="about-us__info-item">
+                            <i class="icon"><img src="./assets/svg/about-us-play.svg" alt="play"></i>
+                            <p>
+                                3200+
+                                <br>
+                                Pro Videos
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="about-us__btn"><a href="#" class="btn-special about-us--btn-content-size">discover more
+                            <i class="icon"><img src="./assets/svg/arrow-right.svg" alt="arrow right"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <section class="course">
+            <div class="container course__wrapper">
+                <div class="course__title">
+                    <div class="course__title-left">
+                        <span class="sub-title">10,000+ Unique Online Courses</span>
+                        <h2 class="title">Our <span>Featured</span> Courses</h2>
+                    </div>
+                    <div class="course__nav-right">
+                        <div class="course__nav-wrapper">
+                            <button>All Courses</button>
+                            <button>Design</button>
+                            <button>Marketing</button>
+                            <button>Development</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="course__info-group">
+                    <div class="course__item-list">
+                        <div class="course__item-wrapper">
+                            <div class="course__item">
+                                <div class="course__item-thumb">
+                                    <a href="#" class="course__item-tag">Graphic Design</a>
+                                    <a href="#" class="course__item-thumb-img"><img
+                                            src="./assets/course-images/course_thumb01.jpg" alt="image"></a>
+                                </div>
+                                <div class="course__item-content">
+                                    <ul class="course__item-info-wrapper">
+                                        <li><i class="icon"><img src="./assets/svg/document.svg" alt="icon"></i>students
+                                        </li>
+                                        <li><i class="icon"><img src="./assets/svg/clock.svg" alt="icon"></i>students
+                                        </li>
+                                        <li><i class="icon"><img src="./assets/svg/person.svg" alt="icon"></i>students
+                                        </li>
+                                    </ul>
+                                    <h5 class="title">A Bigener Adobe Illustrator for Graphic Design</h5>
+                                    <div class="course__item-rating">
+                                        <div class="star">
+                                            <i class="icon"><img src="./assets/svg/star.svg" alt="star"></i>
+                                            <i class="icon"><img src="./assets/svg/star.svg" alt="star"></i>
+                                            <i class="icon"><img src="./assets/svg/star.svg" alt="star"></i>
+                                            <i class="icon"><img src="./assets/svg/star.svg" alt="star"></i>
+                                            <i class="icon"><img src="./assets/svg/star.svg" alt="star"></i>
+                                        </div>
+                                        (06)
+                                    </div>
+                                    <div class="course__item-footer">
+                                        <div class="course__author">
+                                            <a href="#"><img src="./assets/profile-images/course_author01.png"
+                                                    alt="profile"></a>
+                                            <a href="#">David Millar</a>
+                                        </div>
+                                        <h5>$11.00</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+
+</html>
