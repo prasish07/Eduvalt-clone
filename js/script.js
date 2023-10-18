@@ -61,7 +61,6 @@ function handleMediaQueryChange(mediaQuery) {
   } else {
     // Remove padding
     navBar.style.padding = "0";
-    console.log("hello");
   }
 }
 
@@ -108,7 +107,8 @@ const images = document.querySelectorAll(".testimonial__img");
 const contentItem = document.querySelectorAll(".testimonial__content-item");
 const leftButton = document.getElementById("left-btn");
 const rightButton = document.getElementById("right-btn");
-let slideCurrentIndex = 0;
+let slideCurrentIndex = 1;
+let isTransitioning;
 
 // loop through the array for testimonial item
 images.forEach((image, index) => {
@@ -117,7 +117,18 @@ images.forEach((image, index) => {
 
 contentItem.forEach((content, index) => {
   content.style.left = `${index * 100}%`;
+  content.classList.add("testimonial__content-item-transition-effect");
 });
+const removeTransition = () => {
+  contentItem.forEach((item) => {
+    item.classList.remove("testimonial__content-item-transition-effect");
+  });
+};
+const addTransition = () => {
+  contentItem.forEach((item) => {
+    item.classList.add("testimonial__content-item-transition-effect");
+  });
+};
 
 // Function which next the image
 const slide = () => {
@@ -128,22 +139,51 @@ const slide = () => {
     content.style.transform = `translateX(-${slideCurrentIndex * 100}%)`;
   });
 };
+slide();
+
+const first = contentItem[0];
+const last = contentItem[contentItem.length - 1];
+
+first.addEventListener("transitionend", () => {
+  if (slideCurrentIndex === 0) {
+    removeTransition();
+    slideCurrentIndex = contentItem.length - 2;
+    slide();
+  }
+  isTransitioning = false;
+});
+
+// Function to handle the transitionend event
+const handleTransitionEnd = () => {
+  if (slideCurrentIndex === contentItem.length - 1) {
+    removeTransition();
+    slideCurrentIndex = 1;
+    slide();
+  }
+  isTransitioning = false;
+};
+
+last.addEventListener("transitionend", handleTransitionEnd);
 
 // right and left button
 rightButton.addEventListener("click", () => {
-  slideCurrentIndex++;
-  if (slideCurrentIndex > images.length - 1) {
-    slideCurrentIndex = 0;
+  if (!isTransitioning) {
+    // Check if a transition is ongoing
+    isTransitioning = true; 
+    addTransition();
+    slideCurrentIndex++;
+    slide();
   }
-  slide();
 });
 
 leftButton.addEventListener("click", () => {
-  slideCurrentIndex--;
-  if (slideCurrentIndex < 0) {
-    slideCurrentIndex = images.length - 1;
+  if (!isTransitioning) {
+    // Check if a transition is ongoing
+    isTransitioning = true;
+    addTransition();
+    slideCurrentIndex--;
+    slide();
   }
-  slide();
 });
 
 // loop through the array for course item

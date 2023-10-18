@@ -725,9 +725,9 @@
   padding-bottom: 90px;
   background: #f4f7fb;
 }
-.course__wrapper {
+/* .course__wrapper {
   padding: 0;
-}
+} */
 
 .course__title {
   display: flex;
@@ -1118,6 +1118,8 @@
   left: 0;
   width: 100%;
   overflow: hidden;
+}
+.testimonial__content-item-transition-effect {
   transition: transform 0.3s ease-in-out;
 }
 

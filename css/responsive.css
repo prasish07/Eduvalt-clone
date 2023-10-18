@@ -334,8 +334,8 @@
   .about-us__right-wrapper {
     width: 100%;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
   }
   .about-us__content {
     margin-right: 0;
@@ -502,9 +502,9 @@
   .hero__right {
     max-width: 100%;
   }
-  .course__wrapper {
+  /* .course__wrapper {
     padding: 0px 15px;
-  }
+  } */
   .course__nav-wrapper {
     justify-content: center;
   }
@@ -520,9 +520,9 @@
   /* .container {
     padding: 0;
   } */
-  .cta {
+  /* .cta {
     padding: 0px 15px;
-  }
+  } */
   .footer__top-wrapper {
     padding: 110px 0 55px;
   }
